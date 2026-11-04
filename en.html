@@ -1,42 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Foliohaven Privacy Policy</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<h1>Foliohaven Privacy Policy</h1>
-<p>Last updated: May 29, 2026</p>
-<p><a href="index.html">中文</a> | <a href="support.html">Support</a></p>
-
-<h2>1. What We Collect</h2>
-<p>Foliohaven stores your order data <strong>only on your local device</strong>. We do not run an account system on any server — there is no "sign-in".</p>
-
-<h2>2. iCloud Sync (Optional)</h2>
-<p>If you enable iCloud sync (a Plus feature), Foliohaven uses Apple's iCloud service to sync your order data — encrypted — to your own iCloud account. We cannot see this data, and Apple does not share it with us.</p>
-
-<h2>3. CloudKit Public Database</h2>
-<p>Foliohaven uses Apple's CloudKit Public Database <strong>only</strong> to count Founder Edition numbers:</p>
-<ul>
-  <li>When you purchase Plus, we write one record containing: transaction ID, product ID, region code (e.g. "US"), purchase timestamp, and a one-way hash of your device identifier</li>
-  <li>We do <strong>not</strong> write: your name, email, or any order data</li>
-  <li>This data is used solely to compute "you are the Nth Founder globally / Mth in your region"</li>
-</ul>
-
-<h2>4. Third Parties</h2>
-<p>Foliohaven <strong>does not integrate any third-party SDK</strong>, and we do not share data with third parties.</p>
-
-<h2>5. Ads / Tracking</h2>
-<p>Foliohaven <strong>has no ads</strong> and <strong>does not track</strong> any of your behavior.</p>
-
-<h2>6. Data Deletion</h2>
-<p>Deleting the app removes all local data. iCloud-stored data can be deleted via iOS Settings → Apple ID → iCloud → Manage Storage → Foliohaven → Delete Data.</p>
-
-<h2>7. Apple Account Verification (PIN Recovery)</h2>
-<p>If you forget your PIN, Foliohaven offers Sign In with Apple as a recovery mechanism. When you use this, Apple verifies that you own the Apple Account on this device — we never store your Apple credentials, name, email, or user identifier on our servers. The verification is one-time and used solely to authorize a PIN reset.</p>
-
-<h2>8. Contact</h2>
-<p>jeff@fortupath.com</p>
-</body>
-</html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Privacy and your data</title><link rel="stylesheet" href="style.css"></head><body>
+<h1>Privacy and your data</h1><p>Last updated: November 5, 2026</p>
+<nav><a href="index.html">简体中文</a> · <a href="zh-Hant.html">繁體中文</a> · <a href="en.html">English</a> · <a href="support.html">Support</a></nav>
+<h2>Local data and accounts</h2><p>Orders, client names, tasks, amounts, costs, payments, refunds, notes, and service templates are stored on your device. You do not need a Foliohaven account. The app has no advertising SDK. RevenueCat processes purchase information as described below.</p>
+<h2>Optional iCloud sync</h2><p>Apple handles optional Plus iCloud sync using your iCloud account; orders do not pass through a server operated by us. Sync choices apply on the next launch, and Settings shows the current mode. Sync is not an independent backup. Turning it off does not delete previously uploaded data.</p>
+<h2>Purchases and access</h2><p>Apple processes payments. RevenueCat receives an anonymous app identifier, purchase receipts and subscription status to verify and restore Plus access and provide purchase analytics. Your ledger, client details, notes and PIN are not sent to RevenueCat. Foliohaven keeps the verified access status on this device. Apple retains payment-card details; neither Foliohaven nor RevenueCat receives them from the app. RevenueCat uses its own infrastructure to process this purchase information, which may be outside your country. We do not send an email address, advertising identifier, or personal account identifier to RevenueCat. To request help accessing or deleting purchase-service data, contact jeff@fortupath.com. Deleting local ledger data or uninstalling the app does not delete Apple or RevenueCat transaction records or cancel a subscription. See <a href="https://www.revenuecat.com/privacy/">RevenueCat’s privacy policy</a>.</p>
+<h2>App lock and PIN</h2><p>PIN verification information is kept in the device Keychain. The system handles biometrics; the app does not obtain face or fingerprint data. PIN recovery requires system device-owner authentication. App lock does not encrypt exported files.</p>
+<h2>Notifications, widgets, and Siri</h2><p>With permission, notifications and system widgets may show order labels, amounts, or dates. App lock hides sensitive system content and blocks Siri access to the ledger. The Siri setting controls these features; current suggestions do not include client names or order content.</p>
+<h2>Backups and sharing</h2><p>Full JSON backups and CSV exports contain business information, including orders and private notes. They are not additionally encrypted, so choose their location and recipients carefully. Receipt images exclude internal costs, project net income, and private notes by default; you can enable an internal version in the preview. Backups exclude the PIN, purchase credentials, and system permissions.</p>
+<h2>Deletion and restoration</h2><p>Data and reset can delete orders, ledger entries, and service templates. When sync is active in the current session, deletions also reach other devices. Resetting preferences is separate. Files saved or sent elsewhere must be managed separately. Uninstalling the app does not revoke purchases or confirm cloud or external-file deletion. Verify a restorable backup before deleting records.</p>
+<h2>Feedback and contact</h2><p>Feedback emails you choose to send include your message, app version, and build number. You can edit them in your mail app before sending. We receive the email and sender address to respond to your feedback. The app does not automatically attach orders, the PIN, or logs. Contact: jeff@fortupath.com.</p>
+</body></html>
