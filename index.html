@@ -1,42 +1,13 @@
 <!DOCTYPE html>
-<html lang="zh-Hans">
-<head>
-<meta charset="UTF-8">
-<title>笺栖隐私政策</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<h1>笺栖隐私政策</h1>
-<p>最后更新：2026 年 5 月 29 日</p>
-<p><a href="en.html">English</a> | <a href="support.html">支持</a></p>
-
-<h2>1. 我们收集什么</h2>
-<p>笺栖<strong>只在你本地设备</strong>存储订单数据。我们不在服务端运行账户系统，没有“登录”。</p>
-
-<h2>2. iCloud 同步（可选）</h2>
-<p>如果你启用 iCloud 同步（Plus 功能），笺栖会通过 Apple 的 iCloud 服务把你的订单数据加密同步到你自己的 iCloud 账户。我们看不到这些数据，Apple 也不分享给我们。</p>
-
-<h2>3. CloudKit Public Database</h2>
-<p>笺栖使用 Apple 的 CloudKit Public Database 仅用于“首发会员”编号计数：</p>
-<ul>
-  <li>购买 Plus 时写入一条 record，含：交易 ID、产品 ID、地区代码（如 "CN"）、购买时间、用户设备 ID 的不可逆哈希值</li>
-  <li>我们<strong>不</strong>写入：你的姓名、邮箱、订单数据</li>
-  <li>这些数据用于计数“你是全球第 X 位首发会员 / 地区第 Y 位”</li>
-</ul>
-
-<h2>4. 第三方</h2>
-<p>笺栖<strong>没有集成任何第三方 SDK</strong>，不向第三方分享数据。</p>
-
-<h2>5. 广告 / 追踪</h2>
-<p>笺栖<strong>不打广告</strong>，<strong>不追踪</strong>你的任何行为。</p>
-
-<h2>6. 数据删除</h2>
-<p>删除 app 即删除所有本地数据。iCloud 数据可通过 iOS 系统 Settings → Apple ID → iCloud → 管理存储 → 笺栖 → 删除数据。</p>
-
-<h2>7. Apple Account 验证（PIN 重置）</h2>
-<p>若你忘记 PIN，笺栖支持用 Sign In with Apple 验证身份。Apple 仅核实你确实拥有当前设备上的 Apple Account；我们<strong>不</strong>保存你的任何 Apple 凭证 / 姓名 / 邮箱 / 用户标识。验证完成即丢弃，仅用于授权一次性 PIN 重置。</p>
-
-<h2>8. 联系</h2>
-<p>jeff@fortupath.com</p>
-</body>
-</html>
+<html lang="zh-Hans"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>隐私与数据说明</title><link rel="stylesheet" href="style.css"></head><body>
+<h1>隐私与数据说明</h1><p>最后更新：2026-11-05</p>
+<nav><a href="index.html">简体中文</a> · <a href="zh-Hant.html">繁體中文</a> · <a href="en.html">English</a> · <a href="support.html">Support</a></nav>
+<h2>本机数据与账户</h2><p>订单、客户名称、任务、金额、成本、收退款记录、备注和服务模板保存在你的设备。日常使用无需注册笺栖账户；当前版本未接入广告 SDK；RevenueCat 处理的购买信息见下文。</p>
+<h2>可选 iCloud 同步</h2><p>Plus 的 iCloud 同步由 Apple 处理，数据关联到你的 iCloud 账户，不经过我们自建的订单服务器。同步选择在下次启动生效；设置页会显示本次模式。同步不是独立备份，关闭同步不会删除已经上传的数据。</p>
+<h2>购买与权益</h2><p>Apple 处理付款。RevenueCat 接收匿名应用标识、购买凭证和订阅状态，用于验证、恢复 Plus 权益及购买统计。你的账目、客户资料、备注和 PIN 不会发送给 RevenueCat。笺栖在设备上保存已验证的权益状态。 付款卡资料由 Apple 处理，App 不会将其提供给 RevenueCat。RevenueCat 在其基础设施上处理上述购买信息，处理地点可能在你所在国家或地区之外。App 不向其发送邮箱、广告标识或个人账户标识。如需查询或删除购买服务中的相关资料，请联系 jeff@fortupath.com。删除本机账目或卸载 App 不会删除 Apple 或 RevenueCat 的交易记录，也不会取消订阅。详见 <a href="https://www.revenuecat.com/privacy/">RevenueCat 隐私政策</a>。</p>
+<h2>应用锁与 PIN</h2><p>PIN 校验信息存放在本机钥匙串。生物识别由系统处理，App 不获取面容或指纹数据。忘记 PIN 时必须通过系统设备所有者认证后才能重置。应用锁不等于导出文件加密。</p>
+<h2>通知、组件与 Siri</h2><p>获得权限后，通知和系统组件可能显示订单标签、金额或时间。启用应用锁时会隐藏敏感系统内容，并阻止 Siri 读写账本。Siri 开关控制相关功能；当前建议不附带客户名称或订单内容。</p>
+<h2>备份与分享</h2><p>完整 JSON 备份及 CSV 会包含订单和私人备注等业务资料，文件未额外加密，请选择合适的保存位置和接收人。收据图片默认排除内部成本、项目净额和私人备注，可在预览中主动开启内部版本。备份不包含 PIN、购买凭据或系统授权。</p>
+<h2>删除与恢复</h2><p>数据与重置可以删除订单、流水和服务模板；本次启动启用同步时，删除也会传到其他设备。重置偏好是独立操作。你保存或发送到其他位置的文件需自行管理；卸载 App 不会撤销购买，也不能当作已完成云端或外部文件清理。删除前请核对可恢复的备份。</p>
+<h2>反馈与联系</h2><p>你主动发送的反馈邮件包含填写的内容和 App 版本、构建号，发送前可在邮件工具中修改。我们会收到该邮件及发送地址，用于回复和处理反馈。App 不自动附加订单、PIN 或日志。联系邮箱：jeff@fortupath.com。</p>
+</body></html>
